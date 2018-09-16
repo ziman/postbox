@@ -23,6 +23,7 @@ def hello(path):
     if os.path.exists(fullpath):
         flask.abort(409)  # conflict
 
+    os.makedirs(os.path.dirname(fullpath), exist_ok=True)
     flask.request.files['file'].save(fullpath)
 
     return 'ok'
