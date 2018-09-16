@@ -26,3 +26,13 @@ def hello(path):
     flask.request.files['file'].save(fullpath)
 
     return 'ok'
+
+@app.route("/")
+def home():
+    return \
+        '<html>' \
+        '<form action="/upload/somefile" method="post" enctype="multipart/form-data">' \
+        '<input type="file" name="file" />' \
+        '<input type="submit" />' \
+        '</form>' \
+        '</html>'
