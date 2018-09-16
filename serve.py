@@ -28,7 +28,7 @@ def hello(path):
 
     return 'ok'
 
-@app.route("/")
+#@app.route("/upload")
 def home():
     return \
         '<html>' \
