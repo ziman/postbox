@@ -11,6 +11,6 @@ Useful for:
 
 ## Usage
 
-1. `POST` to `/upload/your-dir/your-file.ext` to upload a file.
+1. `POST` to `/your-dir/your-file.ext` to upload a file.
 
 1. Refer your friends to `http://YO.UR.IP.ADDR:8071/`
