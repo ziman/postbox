@@ -11,7 +11,7 @@ app = flask.Flask(__name__)
 
 UPLOAD_ROOT = os.path.realpath('./uploads/')
 
-@app.route("/upload/<path:path>", methods=['POST'])
+@app.route("/<path:path>", methods=['POST'])
 def hello(path):
     fullpath = os.path.realpath(
         os.path.join(UPLOAD_ROOT, path)
@@ -32,7 +32,7 @@ def hello(path):
 def home():
     return \
         '<html>' \
-        '<form action="/upload/somefile.bin" method="post" enctype="multipart/form-data">' \
+        '<form action="/somefile.bin" method="post" enctype="multipart/form-data">' \
         '<input type="file" name="file" />' \
         '<input type="submit" value="upload file" />' \
         '</form>' \
