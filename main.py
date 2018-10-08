@@ -28,12 +28,12 @@ def hello(path):
 
     return 'ok'
 
-#@app.route("/upload")
+@app.route("/")
 def home():
     return \
         '<html>' \
-        '<form action="/upload/somefile" method="post" enctype="multipart/form-data">' \
+        '<form action="/upload/somefile.bin" method="post" enctype="multipart/form-data">' \
         '<input type="file" name="file" />' \
-        '<input type="submit" />' \
+        '<input type="submit" value="upload file" />' \
         '</form>' \
         '</html>'

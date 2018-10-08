@@ -8,3 +8,9 @@ Useful for:
   connections, where SSHFS does not work well.
 
 * Having your friends send you files using their browser.
+
+## Usage
+
+1. `POST` to `/upload/your-dir/your-file.ext` to upload a file.
+
+1. Refer your friends to `http://YO.UR.IP.ADDR:8071/`
